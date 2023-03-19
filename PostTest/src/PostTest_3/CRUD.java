@@ -23,7 +23,7 @@ public class CRUD {
 
         switch (menu){
             case 1 -> {
-                System.out.print("Masukkan ID Karyawan: ");
+                System.out.print("\nMasukkan ID Karyawan: ");
                 int id_k = Integer.parseInt(br.readLine());
                 System.out.print("Masukkan Nama Karyawan: ");
                 String nama = br.readLine();
@@ -43,7 +43,7 @@ public class CRUD {
 
             }
             case 2 -> {
-                System.out.print("Masukkan ID Karyawan: ");
+                System.out.print("\nMasukkan ID Karyawan: ");
                 int id_h = Integer.parseInt(br.readLine());
                 System.out.print("Masukkan Nama Karyawan: ");
                 String nama = br.readLine();
@@ -77,12 +77,12 @@ public class CRUD {
         switch (menu){
             case 1 -> {
                 if (kyw_keuangan.isEmpty()){
-                    System.out.println("-----------------------------------------------");
+                    System.out.println("\n-----------------------------------------------");
                     System.out.println("|                DATA KOSONG                  |");
                     System.out.println("-----------------------------------------------");
                 } else {
                     for(int i=0; i< kyw_keuangan.size(); i++){
-                        System.out.println("-----------------------------------------------");
+                        System.out.println("\n-----------------------------------------------");
                         System.out.println("|              Data karyawan ke-" + (i+1) + "             |");
                         System.out.println("-----------------------------------------------");
 
@@ -97,12 +97,12 @@ public class CRUD {
             }
             case 2 -> {
                 if (kyw_hrd.isEmpty()){
-                    System.out.println("-----------------------------------------------");
+                    System.out.println("\n-----------------------------------------------");
                     System.out.println("|                DATA KOSONG                  |");
                     System.out.println("-----------------------------------------------");
                 } else {
                     for(int i=0; i< kyw_hrd.size(); i++){
-                        System.out.println("-----------------------------------------------");
+                        System.out.println("\n-----------------------------------------------");
                         System.out.println("|              Data karyawan ke-" + (i+1) + "             |");
                         System.out.println("-----------------------------------------------");
 
@@ -137,7 +137,7 @@ public class CRUD {
                 int ind = Integer.parseInt(br.readLine());
                 int index = ind - 1;
 
-                System.out.print("Masukkan data Nama baru: ");
+                System.out.print("\nMasukkan data Nama baru: ");
                 kyw_keuangan.get(index).setNama(br.readLine());
                 System.out.print("Masukkan data No. HP baru: ");
                 kyw_keuangan.get(index).setNohp(br.readLine());
@@ -155,7 +155,7 @@ public class CRUD {
                 int ind = Integer.parseInt(br.readLine());
                 int index = ind - 1;
 
-                System.out.print("Masukkan data Nama baru: ");
+                System.out.print("\nMasukkan data Nama baru: ");
                 kyw_hrd.get(index).setNama(br.readLine());
                 System.out.print("Masukkan data No. HP baru: ");
                 kyw_hrd.get(index).setNohp(br.readLine());
@@ -205,7 +205,7 @@ public class CRUD {
 
     //  EXIT PROGRAM
     static void exit(){
-        System.out.println("\n\n+++   Terima kasih telah menggunakan program   +++");
+        System.out.println("\n\n+++         Terima kasih telah menggunakan program         +++");
         System.out.println("+++    Program ini dikelola oleh Admin divisi Personalia   +++\n");
         System.exit(0);
     }
